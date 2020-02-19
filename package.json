@@ -1,0 +1,32 @@
+{
+  "name": "anywhere",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "fix": "eslint --fix ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luanzhuxian/anywhere.git"
+  },
+  "author": "lzx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luanzhuxian/anywhere/issues"
+  },
+  "homepage": "https://github.com/luanzhuxian/anywhere#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "commit-msg": "commitlint --env HUSKY_GIT_PARAMS"
+    }
+  }
+}
