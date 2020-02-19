@@ -30,5 +30,5 @@
       "commit-msg": "commitlint --env HUSKY_GIT_PARAMS"
     }
   },
-  "pre-commit": ["lint"]
+  "pre-commit": "lint"
 }
