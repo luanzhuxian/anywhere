@@ -1,6 +1,6 @@
 module.exports = {
     'root': true,
-    'extends': ['standard'],
+    'extends': ['eslint:recommended'],
     'rules': {
         'no-console': [
             'error',
