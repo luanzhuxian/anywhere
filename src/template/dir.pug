@@ -1,0 +1,20 @@
+doctype html
+html(lang="zh")
+    head
+        title= title
+        style(type='text/css').
+            li {
+                margin-bottom: 6px;
+            }
+            a {
+                display: block;
+            }
+            .nav {
+                font-size: 18px;
+            }
+    body
+        a(href='/').nav Home
+        ul#list
+            each val in files
+                li
+                    a(href=dirname + '/' + val)= val

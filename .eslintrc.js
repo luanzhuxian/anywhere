@@ -8,7 +8,7 @@ module.exports = {
                 'allow': ['warn', 'error', 'info']
             }
         ],
-        "indent": ["error", 2]
+        'indent': ['error', 2]
         // 'quotes': [
         //     'error',
         //     'single'

@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+      "anywhere": "bin/anywhere"
+  },
   "scripts": {
+    "start": "NODE_ENV=start node index.js --model=start",
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
+    "build": "cross-env NODE_ENV=production nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "fix": "eslint --fix ."
@@ -18,10 +24,17 @@
     "url": "https://github.com/luanzhuxian/anywhere/issues"
   },
   "homepage": "https://github.com/luanzhuxian/anywhere#readme",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "pug": "^2.0.4",
+    "yargs": "^15.1.0"
+  },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
+    "cross-env": "^7.0.0",
     "eslint": "^6.8.0",
     "husky": "^4.2.3",
+    "nodemon": "^2.0.2",
     "pre-commit": "^1.2.2"
   },
   "husky": {
