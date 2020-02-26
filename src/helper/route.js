@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
-const promisify = require('util').promisify
 const pug = require('pug')
+const { promisify } = require('util')
 const { root } = require('../config/defaultConfig')
 const mime = require('./mime')
 const compress = require('./compress')
